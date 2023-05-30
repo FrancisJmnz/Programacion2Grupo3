@@ -1,0 +1,10 @@
+C:\Proyecto\Venta\Venta\Venta.Domain\bin\Debug\netstandard2.1\Venta.Domain.deps.json
+C:\Proyecto\Venta\Venta\Venta.Domain\bin\Debug\netstandard2.1\Venta.Domain.dll
+C:\Proyecto\Venta\Venta\Venta.Domain\bin\Debug\netstandard2.1\Venta.Domain.pdb
+C:\Proyecto\Venta\Venta\Venta.Domain\obj\Debug\netstandard2.1\Venta.Domain.csproj.AssemblyReference.cache
+C:\Proyecto\Venta\Venta\Venta.Domain\obj\Debug\netstandard2.1\Venta.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyecto\Venta\Venta\Venta.Domain\obj\Debug\netstandard2.1\Venta.Domain.AssemblyInfoInputs.cache
+C:\Proyecto\Venta\Venta\Venta.Domain\obj\Debug\netstandard2.1\Venta.Domain.AssemblyInfo.cs
+C:\Proyecto\Venta\Venta\Venta.Domain\obj\Debug\netstandard2.1\Venta.Domain.csproj.CoreCompileInputs.cache
+C:\Proyecto\Venta\Venta\Venta.Domain\obj\Debug\netstandard2.1\Venta.Domain.dll
+C:\Proyecto\Venta\Venta\Venta.Domain\obj\Debug\netstandard2.1\Venta.Domain.pdb

@@ -8,14 +8,27 @@
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
       "Venta.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Venta.Domain": "1.0.0"
+        },
         "runtime": {
           "Venta.Infrastructure.dll": {}
+        }
+      },
+      "Venta.Domain/1.0.0": {
+        "runtime": {
+          "Venta.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Venta.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Venta.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

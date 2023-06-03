@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Venta",
+    "\\Venta\\Venta",
+    "\\Venta\\Venta\\Venta.Infrastructure",
+    "\\Venta\\Venta\\Venta.Infrastructure\\Repositories"
   ],
   "PreviewInSolutionExplorer": false
 }

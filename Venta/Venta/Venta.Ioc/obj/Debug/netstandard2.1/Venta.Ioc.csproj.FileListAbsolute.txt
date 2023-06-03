@@ -8,3 +8,13 @@ C:\Proyecto\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.AssemblyInf
 C:\Proyecto\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.csproj.CoreCompileInputs.cache
 C:\Proyecto\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.dll
 C:\Proyecto\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.pdb
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\bin\Debug\netstandard2.1\Venta.Ioc.deps.json
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\bin\Debug\netstandard2.1\Venta.Ioc.dll
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\bin\Debug\netstandard2.1\Venta.Ioc.pdb
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.csproj.AssemblyReference.cache
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.AssemblyInfoInputs.cache
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.AssemblyInfo.cs
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.csproj.CoreCompileInputs.cache
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.dll
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.pdb

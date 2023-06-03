@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyecto\\Venta\\Venta\\Venta.Api\\Venta.Api.csproj": {}
+    "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Api\\Venta.Api.csproj": {}
   },
   "projects": {
-    "C:\\Proyecto\\Venta\\Venta\\Venta.Api\\Venta.Api.csproj": {
+    "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Api\\Venta.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto\\Venta\\Venta\\Venta.Api\\Venta.Api.csproj",
+        "projectUniqueName": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Api\\Venta.Api.csproj",
         "projectName": "Venta.Api",
-        "projectPath": "C:\\Proyecto\\Venta\\Venta\\Venta.Api\\Venta.Api.csproj",
-        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto\\Venta\\Venta\\Venta.Api\\obj\\",
+        "projectPath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Api\\Venta.Api.csproj",
+        "packagesPath": "C:\\Users\\dauri\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyecto\\Venta\\Venta\\Venta.Domain\\Venta.Domain.csproj": {}
+    "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Domain\\Venta.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Proyecto\\Venta\\Venta\\Venta.Domain\\Venta.Domain.csproj": {
+    "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Domain\\Venta.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto\\Venta\\Venta\\Venta.Domain\\Venta.Domain.csproj",
+        "projectUniqueName": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Domain\\Venta.Domain.csproj",
         "projectName": "Venta.Domain",
-        "projectPath": "C:\\Proyecto\\Venta\\Venta\\Venta.Domain\\Venta.Domain.csproj",
+        "projectPath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Domain\\Venta.Domain.csproj",
         "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto\\Venta\\Venta\\Venta.Domain\\obj\\",
+        "outputPath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Venta",
+    "\\Venta\\Venta",
+    "\\Venta\\Venta\\Venta.Web"
   ],
+  "SelectedNode": "\\Venta\\Venta",
   "PreviewInSolutionExplorer": false
 }

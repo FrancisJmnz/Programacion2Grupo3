@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyecto\\Venta\\Venta\\Venta.Ioc\\Venta.Ioc.csproj": {}
+    "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Ioc\\Venta.Ioc.csproj": {}
   },
   "projects": {
-    "C:\\Proyecto\\Venta\\Venta\\Venta.Ioc\\Venta.Ioc.csproj": {
+    "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Ioc\\Venta.Ioc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto\\Venta\\Venta\\Venta.Ioc\\Venta.Ioc.csproj",
+        "projectUniqueName": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Ioc\\Venta.Ioc.csproj",
         "projectName": "Venta.Ioc",
-        "projectPath": "C:\\Proyecto\\Venta\\Venta\\Venta.Ioc\\Venta.Ioc.csproj",
+        "projectPath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Ioc\\Venta.Ioc.csproj",
         "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto\\Venta\\Venta\\Venta.Ioc\\obj\\",
+        "outputPath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Ioc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

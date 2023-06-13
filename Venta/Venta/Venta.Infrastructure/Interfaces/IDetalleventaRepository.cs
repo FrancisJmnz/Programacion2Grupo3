@@ -1,11 +1,14 @@
 ﻿
 using System.Collections.Generic;
 using Venta.Domain.Entity;
+using Venta.Domain.Repository;
+
+
 
 namespace Venta.Infrastructure.Interfaces
 {
-    public interface IDetalleventaRepository
+    public interface IDetalleventaRepository : IRepositoryBase<DetalleVenta>
     {
-        public List<DetalleVenta> GetDetalleVentasByid(int idDetalleVenta);
+
     }
 }

@@ -4,7 +4,10 @@
     "\\Venta",
     "\\Venta\\Venta",
     "\\Venta\\Venta\\Venta.Infrastructure",
+    "\\Venta\\Venta\\Venta.Infrastructure\\Exepciones",
+    "\\Venta\\Venta\\Venta.Infrastructure\\Models",
     "\\Venta\\Venta\\Venta.Infrastructure\\Repositories"
   ],
+  "SelectedNode": "\\Venta\\Venta\\Venta.Infrastructure\\Repositories\\MenuRepository.cs",
   "PreviewInSolutionExplorer": false
 }

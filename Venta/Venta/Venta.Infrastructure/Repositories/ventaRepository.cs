@@ -9,15 +9,6 @@ namespace Venta.Infrastructure.Repositories
 {
     public class VentaRepository : BaseRepository<venta>, IventaRepository
     {
-        public List<venta> getventasbyid(int idventa)
-        {
-            throw new NotImplementedException();
-        }
-        public override void Save(venta entity)
-        {
-            base.Save(entity);
-        }
-
+     
     }
-
 }

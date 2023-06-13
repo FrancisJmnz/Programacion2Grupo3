@@ -19,6 +19,5 @@ namespace Venta.Domain.Core
         public int? UserDelete { get; set; }
         public DateTime? DeletedDate { get; set; }
         public bool Deleted { get; set; }
-
     }
 }

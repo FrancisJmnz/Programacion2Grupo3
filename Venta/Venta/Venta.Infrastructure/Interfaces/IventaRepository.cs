@@ -1,12 +1,13 @@
 ﻿
 using System.Collections.Generic;
 using Venta.Domain.Entity;
+using Venta.Domain.Repository;
+using Venta.Infrastructure.Core;
 
 namespace Venta.Infrastructure.Interfaces
 {
-    public interface IventaRepository
+    public interface IventaRepository : IRepositoryBase<venta>
     {
-        //Metodos Unicos de Ventas
-        List<venta>getventasbyid(int idventa);
+
     }
 }

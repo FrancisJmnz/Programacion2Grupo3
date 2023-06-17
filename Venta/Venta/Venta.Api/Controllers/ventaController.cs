@@ -17,7 +17,7 @@ namespace Venta.Api.Controllers
           this.ventarepository = ventarepository;
         }
 
-        [HttpGet("Getventa")]
+        [HttpGet("Getventas")]
         public IActionResult Get()
         {
             var ventas = this.ventarepository.Getventas();

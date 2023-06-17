@@ -106,15 +106,15 @@ namespace Venta.Infrastructure.Repositories
 
             try
             {
-                ventas = (from cu in base.GetEntities()
-                          where !cu.Deleted
-                          select new ventaModel()
-                          {
-                              idVenta = cu.idVenta,
-                              numeroDocumento = cu.numeroDocumento,
-                              tipoPago = cu.tipoPago,
-                              total = cu.total,
-                          }).ToList();
+                        ventas = (from cu in base.GetEntities()
+                            where !cu.Deleted
+                            select new ventaModel()
+                            {
+                                idVenta = cu.idVenta,
+                                numeroDocumento = cu.numeroDocumento,
+                                tipoPago = cu.tipoPago,
+                                total = cu.total,
+                            }).ToList();
             }
             catch (Exception ex)
             {

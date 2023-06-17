@@ -1,9 +1,11 @@
-﻿using Venta.Domain.Core;
+﻿using System.ComponentModel.DataAnnotations;
+using Venta.Domain.Core;
 
 namespace Venta.Domain.Entity
 {
-    public class DetalleVenta:BaseEntity
+    public class DetalleVenta : BaseEntity
     {
+        [Key]
         public int idDetalleVenta { get; set;}
         public int? idVenta { get; set;}
         public int? idProducto { get; set; }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vPXVnNioBh89adokdOK1061YEwmGqiM5emGWo53eLodHFTYNlQ7lFrdNmXixrvEplzDV7skvgU50004HpNRxUA==",
+  "dgSpecHash": "Zy5zV6eXlj9NrXaNSA5GmikSsvpBPQGhqmHWerIbI0eeUqD3LfSGvwUy+3FgJuedl+c649tKKWEcZt1suSCKgQ==",
   "success": true,
   "projectFilePath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Infrastructure\\Venta.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -58,7 +58,7 @@
     "C:\\Users\\dauri\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
     "C:\\Users\\dauri\\.nuget\\packages\\system.collections.specialized\\4.3.0\\system.collections.specialized.4.3.0.nupkg.sha512",
     "C:\\Users\\dauri\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
-    "C:\\Users\\dauri\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\dauri\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\dauri\\.nuget\\packages\\system.componentmodel.primitives\\4.3.0\\system.componentmodel.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\dauri\\.nuget\\packages\\system.componentmodel.typeconverter\\4.3.0\\system.componentmodel.typeconverter.4.3.0.nupkg.sha512",
     "C:\\Users\\dauri\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",

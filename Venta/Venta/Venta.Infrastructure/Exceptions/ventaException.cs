@@ -4,7 +4,12 @@ using System.Text;
 
 namespace Venta.Infrastructure.Exceptions
 {
-    internal class ventaException
+    public class ventaException : Exception
     {
+        public ventaException(string message) : base(message)
+        {
+
+        }
+
     }
 }

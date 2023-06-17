@@ -6,7 +6,7 @@ using Venta.Domain.Entity;
 
 namespace Venta.Infrastructure.Context
 {
-    public class VentaContext : DbContext
+    public partial class VentaContext : DbContext
     {
 
         public VentaContext() { }
@@ -14,7 +14,7 @@ namespace Venta.Infrastructure.Context
         public VentaContext(DbContextOptions<VentaContext> options):base(options) { }
 
         public DbSet<venta> Venta { get; set; }
-
+        
 
     }
 }

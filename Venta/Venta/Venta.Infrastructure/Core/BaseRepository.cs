@@ -1,30 +1,66 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using Venta.Domain.Repository;
+using Venta.Infrastructure.Context;
 
 namespace Venta.Infrastructure.Core
 {
     public abstract class BaseRepository<TEntity> : IRepositoryBase<TEntity> where TEntity : class
     {
-        public virtual List<TEntity> GetEntities()
+        private readonly VentaContext context;
+        private readonly DbSet<TEntity> myDbSet;
+
+        public BaseRepository(VentaContext context)
         {
-            throw new NotImplementedException();
+            this.context = context;
+            this.myDbSet = this.context.Set<TEntity>();
         }
 
+        //METODO AÑADIR
+        public virtual void Add(TEntity entity)
+        {
+            this.myDbSet.Add(entity);
+        }
+
+        //Comprobar si exite
+        public virtual bool Exists(Expression<Func<TEntity, bool>> filter)
+        {
+            
+            return this.myDbSet.Any(filter);
+        }
+        //GETENTETY
         public virtual TEntity GetEntity(int id)
         {
-            throw new NotImplementedException();
+            return this.myDbSet.Find(id);
         }
 
-        public virtual void Save(TEntity entity)
+        //METODO REMOVER
+        public virtual void Remove(TEntity entity)
         {
-            throw new NotImplementedException();
+            this.myDbSet.Remove(entity);
         }
 
+        //METODO GUARDAR
+        public virtual void SaveChanges()
+        {
+            this.context.SaveChanges();
+        }
+
+        //METODO ACTUALIZAR
         public virtual void Update(TEntity entity)
         {
-            throw new NotImplementedException();
+            this.myDbSet.Update(entity);
         }
+
+        public virtual List<TEntity> GetEntities()
+        {
+            return this.myDbSet.ToList();
+        }
+
+        
     }
 }

@@ -1,8 +1,14 @@
-﻿using System;
+﻿
 
-public class Class1
+using System;
+
+namespace Venta.Infrastructure.Models
 {
-	public Class1()
+	public class MenuRolModel
 	{
+		public int idMenuRol { get; set; }
+		public int? idMenu { get; set; }
+		public int? idRol { get; set; }
+		
 	}
 }

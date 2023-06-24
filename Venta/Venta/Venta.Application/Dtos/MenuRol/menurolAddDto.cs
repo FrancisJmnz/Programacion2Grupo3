@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Venta.Application.Dtos.MenuRol
 {
-    public class menurolAddDto : DtoBase
+    public class menurolAddDto : menurolDto
     {
     }
 }

@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Venta.Application.Contract;
+using Venta.Application.Service;
 using Venta.Infrastructure.Context;
 using Venta.Infrastructure.Interfaces;
 using Venta.Infrastructure.Repositories;
@@ -12,18 +14,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
-
 //Registro de dependencia base de de datos //
 builder.Services.AddDbContext<VentaContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("VentaContext")));
 
 // Repositories //
 builder.Services.AddTransient<IDetalleventaRepository, DetalleventaRepository>();
 
+builder.Services.AddTransient<IDetalleventaService, DetalleventaService>();
+
 // Registros de app services //
-
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

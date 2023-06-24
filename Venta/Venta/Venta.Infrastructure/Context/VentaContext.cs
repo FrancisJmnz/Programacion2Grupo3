@@ -1,6 +1,4 @@
-﻿
-
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Venta.Domain.Entity;
 
 namespace Venta.Infrastructure.Context

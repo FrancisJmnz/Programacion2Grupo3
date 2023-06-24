@@ -3,6 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+    <UserSecretsId>58558dbc-3094-4b55-9f34-1ba62a47c668</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Venta.Infrastructure\Venta.Infrastructure.csproj" />
+  </ItemGroup>
 
 </Project>

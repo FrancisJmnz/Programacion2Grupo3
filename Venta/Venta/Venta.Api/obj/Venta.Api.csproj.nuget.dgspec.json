@@ -36,9 +36,6 @@
             "projectReferences": {
               "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Application\\Venta.Application.csproj": {
                 "projectPath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Application\\Venta.Application.csproj"
-              },
-              "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Infrastructure\\Venta.Infrastructure.csproj": {
-                "projectPath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Infrastructure\\Venta.Infrastructure.csproj"
               }
             }
           }
@@ -109,7 +106,11 @@
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Infrastructure\\Venta.Infrastructure.csproj": {
+                "projectPath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Infrastructure\\Venta.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

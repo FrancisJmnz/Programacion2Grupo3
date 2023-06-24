@@ -54,7 +54,7 @@ namespace Venta.Infrastructure.Repositories
 
             catch (Exception ex)
             {
-                this.logger.LogError("Ocurrió un error actualizando detalle venta.", ex.ToString());
+                this.logger.LogError("Ocurrió un error actualizando el detalle de venta. ", ex.ToString());
             }
 
         }
@@ -65,7 +65,7 @@ namespace Venta.Infrastructure.Repositories
             {
                 DetalleVenta DetalleVentaToRemove = base.GetEntity(entity.idDetalleVenta);
                 if (DetalleVentaToRemove is null)
-                    throw new DetalleventaException("La venta no existe.");
+                    throw new DetalleventaException("La venta no existe. ");
 
                 DetalleVentaToRemove.Deleted = true;
                 DetalleVentaToRemove.DeletedDate = DateTime.Now;
@@ -76,7 +76,7 @@ namespace Venta.Infrastructure.Repositories
             }
             catch (Exception ex)
             {
-                this.logger.LogError("Ocurrió un error borrando la detalle venta. ", ex.ToString());
+                this.logger.LogError("Ocurrió un error borrando el detalle de venta. ", ex.ToString());
             }
         }
 
@@ -92,7 +92,7 @@ namespace Venta.Infrastructure.Repositories
             }
             catch (Exception ex)
             {
-                this.logger.LogError("Error obteniendo el detalle de venta", ex.ToString());
+                this.logger.LogError("Error obteniendo el detalle de venta. ", ex.ToString());
             }
             return detalleVentaModel;
         }
@@ -119,7 +119,7 @@ namespace Venta.Infrastructure.Repositories
                 }
                 catch (Exception ex)
                 {
-                    this.logger.LogError($"Error obeteniendo los detalles de venta: {ex.Message}", ex.ToString());
+                    this.logger.LogError($"Error obeteniendo el detalle de venta: {ex.Message}", ex.ToString());
                 }
                 return detalleventas;
         }

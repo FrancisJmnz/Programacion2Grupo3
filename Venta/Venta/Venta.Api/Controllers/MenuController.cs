@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Venta.Application.Contract;
+using Venta.Application.Dtos.Menu;
 using Venta.Domain.Entity;
 using Venta.Infrastructure.Interfaces;
 
@@ -11,35 +13,71 @@ namespace Venta.Api.Controllers
     public class MenuController : ControllerBase
     {
         private readonly IMenuRepository menuRepository;
-        public MenuController(IMenuRepository menuRepository) { 
-            this.menuRepository= menuRepository;
+
+        public MenuController(IMenuRepository menuRepository)
+        {
+            this.menuRepository = menuRepository;
         }
+        private readonly IMenuService menuService;
+
+        public MenuController(IMenuService menuService)
+        {
+            this.menuService = menuService;
+        }
+
         [HttpGet("GetMenu")]
         public IActionResult Get()
         {
-            var menus = this.menuRepository.GetMenu();
-            return Ok(menus);
+            var result = this.menuService.Get();
+
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
         }
 
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var menus = this.menuRepository.GetMenu(id);
-            return Ok(menus);
+            var result = this.menuService.GetById(id);
+
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
         }
 
         [HttpPost("Save")]
-        public IActionResult Post([FromBody] Menu Menu)
+        public IActionResult Post([FromBody] menuAddDto menuAddDto)
         {
-            this.menuRepository.Add(Menu);
-            return Ok();
+            var result = this.menuService.Save(menuAddDto);
+
+            if (!result.Success)
+                return BadRequest(result);
+
+
+            return Ok(result);
         }
 
         [HttpPost("Update")]
-        public IActionResult Put([FromBody] Menu menu)
+        public IActionResult Put([FromBody] menuUpdateDto menuUpdateDto)
         {
-            this.menuRepository.Update(menu);
-            return Ok();
+            var result = this.menuService.Update(menuUpdateDto);
+
+            if (result.Success)
+                return Ok(result);
+            else
+                return BadRequest(result);
+        }
+        [HttpPost("Remove")]
+        public IActionResult Delete([FromBody] menuRemoveDto menuRemoveDto)
+        {
+            var result = this.menuService.Remove(menuRemoveDto);
+
+            if (result.Success)
+                return Ok(result);
+            else
+                return BadRequest(result);
         }
     }
 }

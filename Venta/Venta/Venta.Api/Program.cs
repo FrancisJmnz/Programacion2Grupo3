@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Venta.Application.Contract;
+using Venta.Application.Service;
 using Venta.Infrastructure.Context;
 using Venta.Infrastructure.Interfaces;
 using Venta.Infrastructure.Repositories;
@@ -17,8 +19,11 @@ builder.Services.AddDbContext<VentaContext>(options => options.UseSqlServer(buil
 
 // Repositories //
 
+
 builder.Services.AddTransient<IMenuRolRepository, MenuRolRepository>();
 builder.Services.AddTransient<IMenuRepository, MenuRepository>();
+builder.Services.AddTransient<IMenuRolService, MenuRolService>();
+builder.Services.AddTransient<IMenuService, MenuService>();
 
 // Registros de app services //
 

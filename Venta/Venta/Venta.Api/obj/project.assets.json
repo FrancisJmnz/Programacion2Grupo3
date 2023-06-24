@@ -1782,6 +1782,9 @@
       "Venta.Application/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Venta.Infrastructure": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Venta.Application.dll": {}
         },
@@ -6138,8 +6141,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Swashbuckle.AspNetCore >= 6.2.3",
-      "Venta.Application >= 1.0.0",
-      "Venta.Infrastructure >= 1.0.0"
+      "Venta.Application >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6178,9 +6180,6 @@
           "projectReferences": {
             "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Application\\Venta.Application.csproj": {
               "projectPath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Application\\Venta.Application.csproj"
-            },
-            "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Infrastructure\\Venta.Infrastructure.csproj": {
-              "projectPath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Infrastructure\\Venta.Infrastructure.csproj"
             }
           }
         }

@@ -9,8 +9,7 @@
       "Venta.Api/1.0.0": {
         "dependencies": {
           "Swashbuckle.AspNetCore": "6.2.3",
-          "Venta.Application": "1.0.0",
-          "Venta.Infrastructure": "1.0.0"
+          "Venta.Application": "1.0.0"
         },
         "runtime": {
           "Venta.Api.dll": {}
@@ -981,6 +980,9 @@
         }
       },
       "Venta.Application/1.0.0": {
+        "dependencies": {
+          "Venta.Infrastructure": "1.0.0"
+        },
         "runtime": {
           "Venta.Application.dll": {}
         }

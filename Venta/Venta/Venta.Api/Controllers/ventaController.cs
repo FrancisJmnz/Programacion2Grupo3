@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors.Infrastructure;
+using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.Design;
+using Venta.Application.Contract;
+using Venta.Application.Dtos.Venta;
 using Venta.Domain.Entity;
 using Venta.Infrastructure.Interfaces;
 
@@ -9,40 +12,65 @@ namespace Venta.Api.Controllers
     [ApiController]
     public class ventaController : ControllerBase
     {
+        private readonly IventaService ventaService;
 
-        private readonly IventaRepository ventarepository;
-
-        public ventaController(IventaRepository ventarepository) 
-        { 
-          this.ventarepository = ventarepository;
+        public ventaController(IventaService ventaService)
+        {
+            this.ventaService = ventaService;
         }
-
+      
         [HttpGet("Getventas")]
         public IActionResult Get()
         {
-            var ventas = this.ventarepository.Getventas();
-            return Ok(ventas);
+            var result = this.ventaService.Get();
+
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
         }
 
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var venta = this.ventarepository.Getventa(id);
-            return Ok(venta);
+            var result = this.ventaService.GetById(id);
+
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
         }
 
         [HttpPost("Save")]
-        public IActionResult Post([FromBody] venta Venta)
+        public IActionResult Post([FromBody] ventaAddDto ventaAddDto)
         {
-            this.ventarepository.Add(Venta);
-            return Ok();
+            var result = this.ventaService.Save(ventaAddDto);
+
+            if (!result.Success)
+                return BadRequest(result);
+
+
+            return Ok(result);
         }
 
         [HttpPost("Update")]
-        public IActionResult Put([FromBody] venta Venta)
+        public IActionResult Put([FromBody] ventaUpdateDto VentaUpdateDto)
         {
-            this.ventarepository.Update(Venta);
-            return Ok();
+            var result = this.ventaService.Update(VentaUpdateDto);
+
+            if (result.Success)
+                return Ok(result);
+            else
+                return BadRequest(result);
         }
+
+        [HttpPost("Remove")]
+        public IActionResult Delete([FromBody] ventaRemoveDto VentaRemoveDto)
+        {
+            var result = this.ventaService.Remove(VentaRemoveDto);
+            return Ok(result);
+        }
+
+
     }
 }

@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Venta.Application.Contract;
+using Venta.Application.Service;
 using Venta.Infrastructure.Context;
 using Venta.Infrastructure.Interfaces;
 using Venta.Infrastructure.Repositories;
@@ -17,6 +19,9 @@ builder.Services.AddDbContext<VentaContext>(options => options.UseSqlServer(buil
 
 // Repositories //
 builder.Services.AddTransient<IventaRepository, VentaRepository>();
+
+builder.Services.AddTransient<IventaService, ventaService>();
+
 
 // Registros de app services //
 var app = builder.Build();

@@ -32,6 +32,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Proyecto/Venta/Venta/Venta/Venta.Web/Views/venta/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdmVudGFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Venta/Venta/Venta/Venta.Web/Views/venta/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdmVudGFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Venta/Venta/Venta/Venta.Web/Views/venta/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdmVudGFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Venta/Venta/Venta/Venta.Web/Views/venta/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdmVudGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Proyecto/Venta/Venta/Venta/Venta.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

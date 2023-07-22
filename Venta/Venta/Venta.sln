@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Venta.Application", "Venta.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Venta.Api", "Venta.Api\Venta.Api.csproj", "{B3B8A56E-70A9-496D-9E3C-BFB28F9BBCB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Venta.Ioc", "Venta.Ioc\Venta.Ioc.csproj", "{9B802051-25EE-470C-981F-2B1BEE5EB387}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Venta.Ioc", "Venta.Ioc\Venta.Ioc.csproj", "{9B802051-25EE-470C-981F-2B1BEE5EB387}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

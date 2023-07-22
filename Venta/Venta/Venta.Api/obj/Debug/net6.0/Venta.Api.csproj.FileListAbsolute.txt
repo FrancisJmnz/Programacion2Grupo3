@@ -95,3 +95,5 @@ C:\Proyecto\Venta\Venta\Venta\Venta.Api\bin\Debug\net6.0\Venta.Infrastructure.dl
 C:\Proyecto\Venta\Venta\Venta\Venta.Api\bin\Debug\net6.0\Venta.Application.pdb
 C:\Proyecto\Venta\Venta\Venta\Venta.Api\bin\Debug\net6.0\Venta.Infrastructure.pdb
 C:\Proyecto\Venta\Venta\Venta\Venta.Api\bin\Debug\net6.0\Venta.Domain.pdb
+C:\Proyecto\Venta\Venta\Venta\Venta.Api\bin\Debug\net6.0\Venta.Ioc.dll
+C:\Proyecto\Venta\Venta\Venta\Venta.Api\bin\Debug\net6.0\Venta.Ioc.pdb

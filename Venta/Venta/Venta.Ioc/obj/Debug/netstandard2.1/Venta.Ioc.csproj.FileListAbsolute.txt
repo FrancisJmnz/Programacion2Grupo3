@@ -18,3 +18,10 @@ C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.Assem
 C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.csproj.CoreCompileInputs.cache
 C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.dll
 C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.pdb
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\bin\Debug\netstandard2.1\Venta.Application.dll
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\bin\Debug\netstandard2.1\Venta.Domain.dll
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\bin\Debug\netstandard2.1\Venta.Infrastructure.dll
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\bin\Debug\netstandard2.1\Venta.Application.pdb
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\bin\Debug\netstandard2.1\Venta.Domain.pdb
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\bin\Debug\netstandard2.1\Venta.Infrastructure.pdb
+C:\Proyecto\Venta\Venta\Venta\Venta.Ioc\obj\Debug\netstandard2.1\Venta.Ioc.csproj.CopyComplete

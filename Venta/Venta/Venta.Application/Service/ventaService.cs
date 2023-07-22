@@ -22,7 +22,6 @@ namespace Venta.Application.Service
             this.logger = logger;
         }
 
-        //Validaciones
         private bool Validar(ventaDto model, ServiceResult result)
         {
             if (string.IsNullOrEmpty(model.numeroDocumento))
@@ -109,13 +108,15 @@ namespace Venta.Application.Service
                     return result;
                 }
 
-                this.ventarepository.Add(new Domain.Entity.venta()
+                DateTime fechaActual = DateTime.Now;
+
+                this.ventarepository.Add(new venta()
                 {
                     numeroDocumento  = model.numeroDocumento,
                     tipoPago = model.tipoPago,
-                    CreationDate = model.ChangeDate,
-                    CreationUser = model.ChangeUser,
-                    total = model.total.Value
+                    total = model.total.Value,
+                    CreationDate = fechaActual,
+                    CreationUser = model.ChangeUser
                 });
 
                 result.Message = "venta creada correctamente.";
@@ -185,14 +186,14 @@ namespace Venta.Application.Service
                     return result;
                 }
 
-                // Actualizar los datos de la venta existente
+                DateTime fechaactual = DateTime.Now;
+
                 ventaExistente.numeroDocumento = model.numeroDocumento;
                 ventaExistente.tipoPago = model.tipoPago;
-                ventaExistente.CreationDate = model.ChangeDate;
+                ventaExistente.CreationDate = fechaactual;
                 ventaExistente.CreationUser = model.ChangeUser;
                 ventaExistente.total = model.total.Value;
 
-                // Guardar los cambios en la venta actualizada
                 this.ventarepository.Update(ventaExistente);
 
                 result.Message = "Venta actualizada correctamente.";

@@ -71,6 +71,5 @@ namespace Venta.Api.Controllers
             return Ok(result);
         }
 
-
     }
 }

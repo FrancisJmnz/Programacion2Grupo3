@@ -9,7 +9,7 @@ namespace Venta.Infrastructure.Context
     public partial class VentaContext : DbContext
     {
 
-        public VentaContext() { }
+        public VentaContext() { } 
 
         public VentaContext(DbContextOptions<VentaContext> options):base(options) { }
 

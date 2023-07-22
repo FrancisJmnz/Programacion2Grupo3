@@ -4,6 +4,7 @@ using Venta.Application.Service;
 using Venta.Infrastructure.Context;
 using Venta.Infrastructure.Interfaces;
 using Venta.Infrastructure.Repositories;
+using Venta.Ioc.Dependencies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,10 +19,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<VentaContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("VentaContext")));
 
 // Repositories //
-builder.Services.AddTransient<IventaRepository, VentaRepository>();
+/*builder.Services.AddTransient<IventaRepository, VentaRepository>();
+builder.Services.AddTransient<IventaService, ventaService>();*/
 
-builder.Services.AddTransient<IventaService, ventaService>();
-
+//My Dependencies
+builder.Services.AddventaDependency();
 
 // Registros de app services //
 var app = builder.Build();

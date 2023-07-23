@@ -1,8 +1,11 @@
 ﻿using Microsoft.Extensions.Logging;
 using System;
+using System.Collections.Generic;
+using System.Text;
 using Venta.Application.Contract;
 using Venta.Application.Core;
 using Venta.Application.Dtos.Detalleventa;
+using Venta.Domain.Entity;
 using Venta.Infrastructure.Interfaces;
 
 namespace Venta.Application.Service
@@ -20,6 +23,7 @@ namespace Venta.Application.Service
 
         private bool Validar(DetalleventaDto model, ServiceResult result)
         {
+
             if (!model.cantidad.HasValue)
             {
                 result.Message = "La cantidad del detalle venta es requerido.";
@@ -81,6 +85,40 @@ namespace Venta.Application.Service
             return result;
         }
 
+        public ServiceResult Save(DetalleventaAddDtos model)
+        {
+            ServiceResult result = new ServiceResult();
+
+            try
+            {
+                if (!Validar(model, result))
+                {
+                    return result;
+                }
+
+                DateTime fechaActual = DateTime.Now;
+
+                this.detalleventaRepository.Add(new Domain.Entity.DetalleVenta()
+                {
+                    cantidad = model.cantidad,
+                    precio = model.precio,
+                    CreationDate = fechaActual,
+                    CreationUser = model.ChangeUser,
+                    total = model.total.Value
+                });
+
+                result.Message = "Detalle de venta creado correctamente. ";
+
+            }
+            catch (Exception ex)
+            {
+                result.Success = false;
+                result.Message = "Error guardando el detalle de venta. ";
+                this.logger.LogError($"{result.Message}", ex.ToString());
+            }
+            return result;
+        }
+
         public ServiceResult Remove(DetalleventaRemoveDto model)
         {
             ServiceResult result = new ServiceResult();
@@ -117,38 +155,6 @@ namespace Venta.Application.Service
 
         }
 
-        public ServiceResult Save(DetalleventaAddDtos model)
-        {
-            ServiceResult result = new ServiceResult();
-
-            try
-            {
-                if (!Validar(model, result))
-                {
-                    return result;
-                }
-
-                this.detalleventaRepository.Add(new Domain.Entity.DetalleVenta()
-                {
-                    cantidad = model.cantidad,
-                    precio = model.precio,
-                    CreationDate = model.ChangeDate,
-                    CreationUser = model.ChangeUser,
-                    total = model.total.Value
-                });
-
-                result.Message = "Detalle de venta creado correctamente. ";
-
-            }
-            catch (Exception ex)
-            {
-                result.Success = false;
-                result.Message = "Error guardando el detalle de venta. ";
-                this.logger.LogError($"{result.Message}", ex.ToString());
-            }
-            return result;
-        }
-
         public ServiceResult Update(DetalleventaUpdateDto model)
         {
             ServiceResult result = new ServiceResult();
@@ -171,14 +177,14 @@ namespace Venta.Application.Service
                     return result;
                 }
 
-                // Actualizar los datos de la venta existente
+                DateTime fechaactual = DateTime.Now;
+
                 DetalleventaExistente.cantidad = model.cantidad;
                 DetalleventaExistente.precio = model.precio;
-                DetalleventaExistente.CreationDate = model.ChangeDate;
+                DetalleventaExistente.CreationDate = fechaactual;
                 DetalleventaExistente.CreationUser = model.ChangeUser;
                 DetalleventaExistente.total = model.total.Value;
 
-                // Guardar los cambios en la venta actualizada
                 this.detalleventaRepository.Update(DetalleventaExistente);
 
                 result.Message = "Detalle de venta actualizada correctamente.";

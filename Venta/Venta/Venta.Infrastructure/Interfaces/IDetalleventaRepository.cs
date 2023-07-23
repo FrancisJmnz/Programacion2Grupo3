@@ -8,8 +8,8 @@ namespace Venta.Infrastructure.Interfaces
 {
     public interface IDetalleventaRepository : IRepositoryBase<DetalleVenta>
     {
-        List<DetalleventaModel> GetDetalleventa();
-        DetalleventaModel GetDetalleventas(int idDetalleVenta);
+        List<detalleventaModel> GetDetalleventa();
+        detalleventaModel GetDetalleventas(int idDetalleVenta);
 
     }
 }

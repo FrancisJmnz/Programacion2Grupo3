@@ -80,9 +80,9 @@ namespace Venta.Infrastructure.Repositories
             }
         }
 
-        public DetalleventaModel GetDetalleventas(int idDetalleVenta)
+        public detalleventaModel GetDetalleventas(int idDetalleVenta)
         {
-            DetalleventaModel detalleVentaModel = new DetalleventaModel();
+            detalleventaModel detalleVentaModel = new detalleventaModel();
 
             try
             {
@@ -99,15 +99,15 @@ namespace Venta.Infrastructure.Repositories
 
 
 
-        public List<DetalleventaModel> GetDetalleventa()
+        public List<detalleventaModel> GetDetalleventa()
         {
-                List<DetalleventaModel> detalleventas = new List<DetalleventaModel>();
+                List<detalleventaModel> detalleventas = new List<detalleventaModel>();
 
                 try
                 {
                     detalleventas = (from cu in base.GetEntities()
                                      where !cu.Deleted
-                                     select new DetalleventaModel()
+                                     select new detalleventaModel()
                                      {
                                          idDetalleVenta = cu.idDetalleVenta,
                                          idVenta = cu.idVenta,

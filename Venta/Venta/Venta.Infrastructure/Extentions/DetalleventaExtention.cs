@@ -8,9 +8,9 @@ namespace Venta.Infrastructure.Extentions
 {
     public static class DetalleventaExtention
     {
-        public static DetalleventaModel ConvertDetalleventaEntityToModel(this DetalleVenta detalleventa)
+        public static detalleventaModel ConvertDetalleventaEntityToModel(this DetalleVenta detalleventa)
         {
-            DetalleventaModel detalleventaModel = new DetalleventaModel()
+            detalleventaModel detalleventaModel = new detalleventaModel()
             {
                 idDetalleVenta = detalleventa.idDetalleVenta,
                 idVenta = detalleventa.idVenta,

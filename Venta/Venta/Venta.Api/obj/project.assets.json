@@ -1819,6 +1819,19 @@
         "runtime": {
           "bin/placeholder/Venta.Infrastructure.dll": {}
         }
+      },
+      "Venta.Ioc/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Venta.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Venta.Ioc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Venta.Ioc.dll": {}
+        }
       }
     }
   },
@@ -6136,12 +6149,18 @@
       "type": "project",
       "path": "../Venta.Infrastructure/Venta.Infrastructure.csproj",
       "msbuildProject": "../Venta.Infrastructure/Venta.Infrastructure.csproj"
+    },
+    "Venta.Ioc/1.0.0": {
+      "type": "project",
+      "path": "../Venta.Ioc/Venta.Ioc.csproj",
+      "msbuildProject": "../Venta.Ioc/Venta.Ioc.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Swashbuckle.AspNetCore >= 6.2.3",
-      "Venta.Application >= 1.0.0"
+      "Venta.Application >= 1.0.0",
+      "Venta.Ioc >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6180,6 +6199,9 @@
           "projectReferences": {
             "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Application\\Venta.Application.csproj": {
               "projectPath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Application\\Venta.Application.csproj"
+            },
+            "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Ioc\\Venta.Ioc.csproj": {
+              "projectPath": "C:\\Proyecto\\Venta\\Venta\\Venta\\Venta.Ioc\\Venta.Ioc.csproj"
             }
           }
         }

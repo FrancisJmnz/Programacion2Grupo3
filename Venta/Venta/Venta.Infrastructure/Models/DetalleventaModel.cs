@@ -1,6 +1,6 @@
 ﻿namespace Venta.Infrastructure.Models
 {
-    public class DetalleventaModel
+    public class detalleventaModel
     {
         public int idDetalleVenta { get; set; }
         public int? idVenta { get; set; }

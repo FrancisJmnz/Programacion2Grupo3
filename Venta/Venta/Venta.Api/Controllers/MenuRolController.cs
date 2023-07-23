@@ -12,17 +12,17 @@ namespace Venta.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MenuRolController : ControllerBase
+    public class MenuController : ControllerBase
     {
         private readonly IMenuRolRepository menurolRepository;
 
-        public MenuRolController(IMenuRepository menuRepository)
+        public MenuController(IMenuRepository menuRepository)
         {
             this.menurolRepository = menurolRepository;
         }
         private readonly IMenuRolService menurolService;
 
-        public MenuRolController(IMenuRolService menurolService)
+        public MenuController(IMenuRolService menurolService)
         {
             this.menurolService = menurolService;
         }

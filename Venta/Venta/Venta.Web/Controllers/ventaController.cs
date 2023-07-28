@@ -35,7 +35,6 @@ namespace Venta.Web.Controllers
             return View(ventasModelo);
         }
 
-
         // GET: ventaController/Details/5
         public ActionResult Details(int id)
         {

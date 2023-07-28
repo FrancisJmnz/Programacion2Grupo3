@@ -175,8 +175,6 @@ namespace Venta.Application.Service
                     return result;
                 }
 
-                //codigo
-
                 var ventaExistente = this.ventarepository.GetEntity(model.idVenta);
 
                 if (ventaExistente == null)

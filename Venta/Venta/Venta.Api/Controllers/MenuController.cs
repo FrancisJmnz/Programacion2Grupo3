@@ -12,12 +12,7 @@ namespace Venta.Api.Controllers
     [ApiController]
     public class MenuController : ControllerBase
     {
-        private readonly IMenuRepository menuRepository;
-
-        public MenuController(IMenuRepository menuRepository)
-        {
-            this.menuRepository = menuRepository;
-        }
+        
         private readonly IMenuService menuService;
 
         public MenuController(IMenuService menuService)

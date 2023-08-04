@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Venta.Web.Models.VentaModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>VentaHttp</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.numeroDocumento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipoPago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.total)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.numeroDocumento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipoPago)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.total)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.idVenta  }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.idVenta  }) |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

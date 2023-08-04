@@ -31,6 +31,9 @@ namespace Venta.Web.Controllers
 
             using (var response = await httpClient.PostAsync(apiUrl, content))
             {
+                var requestContent = await content.ReadAsStringAsync();
+                var responseContent = await response.Content.ReadAsStringAsync();
+
                 response.EnsureSuccessStatusCode();
                 string apiResponse = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<T>(apiResponse);

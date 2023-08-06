@@ -12,7 +12,7 @@ namespace Venta.Web.Controllers
             var httpClientHandler = new HttpClientHandler();
             httpClientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyError) => true;
             this.httpClient = new HttpClient(httpClientHandler);
-            this.httpClient.BaseAddress = new Uri("http://localhost:5000/api/Menu/GetMenu");
+            this.httpClient.BaseAddress = new Uri("http://localhost:5000/api/Menu/");
         }
 
         public async Task<T> GetApiResponseAsync<T>(string apiUrl)
@@ -31,6 +31,9 @@ namespace Venta.Web.Controllers
 
             using (var response = await httpClient.PostAsync(apiUrl, content))
             {
+                var requestContent = await content.ReadAsStringAsync();
+                var responseContent = await response.Content.ReadAsStringAsync();
+
                 response.EnsureSuccessStatusCode();
                 string apiResponse = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<T>(apiResponse);

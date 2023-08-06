@@ -3,8 +3,9 @@ using Venta.Application.Contract;
 using Venta.Application.Core;
 using Venta.Application.Dtos.MenuRol;
 using System;
+using Venta.Domain.Entity;
 using Venta.Infrastructure.Interfaces;
-using Venta.Application.Dtos.MenuRol;
+
 
 namespace Venta.Application.Service
 {
@@ -87,29 +88,79 @@ namespace Venta.Application.Service
             return result;
 
         }
+        /*private bool Validar(menurolDto model,  ServiceResult result)
+        {
+            if (!model.idMenuRol.HasValue)
+            {
+                result.Message = "El nombre de menu es requerido";
+                result.Success = false;
+                return false;
+            }
 
+            if (model.nombre.L)
+            {
+                result.Message = "La longitud del nombre es inválida";
+                result.Success = false;
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(model.icono))
+            {
+                result.Message = "El icono es requerido";
+                result.Success = false;
+                return false;
+            }
+
+            if (model.icono.Length > 50)
+            {
+                result.Message = "La longitud del icono es inválida";
+                result.Success = false;
+                return false;
+            }
+            if (string.IsNullOrEmpty(model.url))
+            {
+                result.Message = "El url de pago es requerido";
+                result.Success = false;
+                return false;
+            }
+
+            if (model.url.Length > 50)
+            {
+                result.Message = "El url del menu es requerido.";
+                result.Success = false;
+                return false;
+            }
+
+            return true;
+        }*/
         public ServiceResult Save(menurolAddDto model)
         {
             ServiceResult result = new ServiceResult();
 
             try
             {
-
-                this.menurolRepository.Add(new Domain.Entity.MenuRol()
+                /*if (!Validar(model, result))
                 {
+                    return result;
+                }*/
+
+                DateTime fechaActual = DateTime.Now;
+
+                this.menurolRepository.Add(new MenuRol()
+                {
+                    idMenuRol = model.idMenuRol,
                     idMenu = model.idMenu,
                     idRol = model.idRol,
-                    CreationDate = model.ChangeDate,
+                    CreationDate = fechaActual,
                     CreationUser = model.ChangeUser
                 });
 
-                result.Message = "menurol creado correctamente.";
-
+                result.Message = "venta creada correctamente.";
             }
             catch (Exception ex)
             {
                 result.Success = false;
-                result.Message = "Error guardando el menurol";
+                result.Message = "Error guardando la venta";
                 this.logger.LogError($"{result.Message}", ex.ToString());
             }
             return result;

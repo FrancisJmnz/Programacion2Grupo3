@@ -14,12 +14,7 @@ namespace Venta.Api.Controllers
     [ApiController]
     public class MenuRolController : ControllerBase
     {
-        private readonly IMenuRolRepository menurolRepository;
-
-        public MenuRolController(IMenuRepository menuRepository)
-        {
-            this.menurolRepository = menurolRepository;
-        }
+        
         private readonly IMenuRolService menurolService;
 
         public MenuRolController(IMenuRolService menurolService)

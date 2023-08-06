@@ -1,0 +1,41 @@
+﻿@model Venta.Web.Models.menuRolModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit MenuRol</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="idMenuRol" class="control-label"></label>
+                <input asp-for="idMenuRol" class="form-control" readonly/>
+                <span asp-validation-for="idMenuRol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="idMenu" class="control-label"></label>
+                <input asp-for="idMenu" class="form-control" />
+                <span asp-validation-for="idMenu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="idRol" class="control-label"></label>
+                <input asp-for="idRol" class="form-control" />
+                <span asp-validation-for="idRol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

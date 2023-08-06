@@ -21,7 +21,7 @@ namespace Venta.Application.Service
             this._menuRepository = menuRepository;
             this.logger = logger;
         }
-        private bool Validar(menuDto model, ref ServiceResult result)
+        public  bool Validar(menuDto model, ref ServiceResult result)
         {
             if (string.IsNullOrEmpty(model.nombre))
             {

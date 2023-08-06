@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Venta.Infrastructure.Context;
 using Venta.Ioc.Dependencies;
+using Venta.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,10 @@ builder.Services.AddDbContext<VentaContext>(options => options.UseSqlServer(buil
 //My dependencies //
 builder.Services.AddMenuDependency();
 builder.Services.AddMenuRolDependency();
+
+builder.Services.AddTransient<IMenuApiService, MenuApiService>();
+
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 

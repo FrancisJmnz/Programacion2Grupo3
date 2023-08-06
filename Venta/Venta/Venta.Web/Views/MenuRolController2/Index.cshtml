@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Venta.Web.Models.menuRolModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>MenuRol con api</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idMenu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idRol)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idMenuRol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idMenu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idRol)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.idMenuRol  }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.idMenuRol }) |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
